@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Snippet Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <style>
+    /* Additional styling */
+    .code-container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      height: fit-content;
+      max-width: fit-content;
+      font-weight: 900;
+      font-family: cursive;
+      background-color: black;
+  
+    }
+    textarea{
+      width:  20%;
+      height: 200px;
+    }
+   
+  
+
+  </style>
+</head>
+<body>
+  <textarea id="code"></textarea>
+  <textarea id="head"></textarea>
+  <textarea id="body"></textarea>
+  <div id="codeContainer" class="code-container">
+    <!-- Your code snippet will be generated here -->
+  </div>
+
+  <button id="clickMe">Generate Snippet</button>
+  <button onclick="downloadSnippet()">Download Snippet</button>
+
+  <!-- External libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+  <script src="canvas.js">
+  </script>
+</body>
+</html>
